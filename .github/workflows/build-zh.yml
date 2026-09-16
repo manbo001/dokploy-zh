@@ -41,6 +41,11 @@ jobs:
             type=raw,value=zh-latest
             type=sha,prefix=zh-
 
+      - name: Prepare env file
+        run: |
+          cp apps/dokploy/.env.production.example .env.production
+          cp apps/dokploy/.env.production.example apps/dokploy/.env.production
+
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
