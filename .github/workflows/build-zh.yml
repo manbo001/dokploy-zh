@@ -1,9 +1,10 @@
 name: Build Chinese Dokploy Image
 
 # 构建带中英文切换的 Dokploy 镜像并推送到 GHCR
+#
+# 只在手动触发时构建：推送代码不会自动构建。
+# 需要构建时，到仓库 Actions 页面 -> 左侧 "Build Chinese Dokploy Image" -> Run workflow
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 env:

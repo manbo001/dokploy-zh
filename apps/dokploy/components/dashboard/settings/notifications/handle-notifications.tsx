@@ -984,7 +984,7 @@ export const HandleNotifications = ({ notificationId }: Props) => {
 													<FormLabel>Bot Token</FormLabel>
 													<FormControl>
 														<Input
-															placeholder="6660491268:AAFMGmajZOVewpMNZCgJr5H7cpXpoZPgvXw"
+															placeholder="1234567890:REPLACE_WITH_YOUR_BOT_TOKEN"
 															{...field}
 														/>
 													</FormControl>
